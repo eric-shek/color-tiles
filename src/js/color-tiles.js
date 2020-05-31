@@ -291,7 +291,8 @@ $(document).ready(function () {
     canvas.on("path:created", (e) => {
       // console.log(e);
       e.path.set({
-        selectable: false,
+        hasControls: false,
+        // selectable: false,
         hoverCursor: "default",
       });
     });
