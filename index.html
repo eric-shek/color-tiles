@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <header>
+    <script type="text/javascript" src="src/libs/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="src/libs/fabric.min.js"></script>
+    <script type="text/javascript" src="src/js/fabric-drag.js"></script>
+    <script type="text/javascript" src="src/js/color-tiles.js"></script>
+    <link rel="stylesheet" type="text/css" href="src/css/base.css" />
+    <object
+      id="svg"
+      style="display: none;"
+      type="text/svg+xml"
+      data="src/assets/eraser.svg"
+    ></object>
+  </header>
+  <body>
+    <div class="tool-bar">
+      <img class="draggable" src="src/assets/yellow.svg" />
+      <img class="right draggable" draggable="true" src="src/assets/red.svg" />
+      <img class="draggable" src="src/assets/blue.svg" />
+      <img
+        class="right draggable"
+        draggable="true"
+        src="src/assets/green.svg"
+      />
+      <div class="center">
+        <img
+          id="eraser-btn"
+          class="disable tool mouse"
+          src="src/assets/eraser.png"
+        />
+        <img
+          id="pencil-btn"
+          class="disable tool mouse"
+          src="src/assets/pencil.png"
+        />
+        <img id="reset-btn" class="tool" src="src/assets/rotate.png" />
+      </div>
+      <div class="center">
+        <img
+          id="minus-btn"
+          class="disable tool"
+          src="src/assets/circle-minus.svg"
+        />
+        <img id="plus-btn" class="tool" src="src/assets/circle-plus.svg" />
+        <img id="move-btn" class="tool disable" src="src/assets/move.svg" />
+      </div>
+    </div>
+    <div id="canvas-container">
+      <canvas id="canvas" width="800" height="600"></canvas>
+    </div>
+  </body>
+</html>
